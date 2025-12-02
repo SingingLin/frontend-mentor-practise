@@ -1,9 +1,18 @@
+:root {
+  --white: #fff;
+  --slate-300: #d5e1ef;
+  --slate-500: #68778d;
+  --slate-900: #1f314f;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #d5e1ef;
+  background-color: var(--slate-300);
   font-family: "Outfit", sans-serif;
 }
 
@@ -15,16 +24,16 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--white);
   width: 320px;
   height: 499px;
-  padding: 16px;
-  padding-bottom: 40px;
+  padding: 16px 16px 40px;
   border-radius: 20px;
 }
 
 .card img {
   width: 100%;
+  display: block;
   border-radius: 10px;
 }
 
@@ -37,17 +46,17 @@ body {
 
 .card h1 {
   font-size: 22px;
-  font-weight: 700;
-  color: #1f314f;
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-900);
   margin-bottom: 16px;
   letter-spacing: 0px;
   line-height: 120%;
-} 
+}
 
 .card p {
   font-size: 15px;
-  font-weight: 400;
-  color: #68778d;
-  letter-spacing: .2px;
+  font-weight: var(--font-weight-normal);
+  color: var(--slate-500);
+  letter-spacing: 0.2px;
   line-height: 140%;
 }
